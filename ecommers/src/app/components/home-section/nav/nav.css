@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: black;
+  margin: 4px 0;
+}
+
+.nav-center{
+    display: flex;
+}
+
+.nav-center .logo1 {
+  width: 0;
+  height:0;
+  border-right: 20px solid grey;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.nav-center .logo2 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid black;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  gap: 10px;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .nav-left {
+    gap: 15px;
+  }
+
+  .nav-left a {
+    font-size: 13px;
+  }
+
+  .cart {
+    padding: 8px 15px;
+  }
+
+  .icon-circle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-left a {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .cart {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .icon-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-center .logo1 {
+    border-right: 15px solid grey;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+
+  .nav-center .logo2 {
+    border-left: 15px solid black;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cart {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}

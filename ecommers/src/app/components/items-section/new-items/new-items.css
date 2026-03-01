@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.new-item {
+  background: #f4f4f4;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left h1 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #000;
+  margin: 0;
+}
+
+.left h1:nth-child(2) {
+  color: #666;
+  font-size: 64px;
+}
+
+.right h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #959595;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.right h3:hover {
+  text-decoration: underline;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 24px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+border: 1px solid black;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information h1 {
+  font-size: 20px;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+
+.information h1:last-child {
+  font-size: 24px;
+  color: #000;
+}
+
+.slider-buttons {
+  margin-top: 43px;
+  display: flex;
+  gap: 10px;
+  margin-left: 40px;
+  justify-content: center;
+
+
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    height: 380px;
+  }
+  
+  .left h1 {
+    font-size: 56px;
+  }
+  
+  .left h1:nth-child(2) {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 32px;
+  }
+  
+  .left h1 {
+    font-size: 48px;
+  }
+  
+  .left h1:nth-child(2) {
+    font-size: 40px;
+  }
+  
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,109 @@
+.page-wrapper {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.title{
+text-align: center;
+}
+
+/* base footer */
+.minimal-footer {
+
+  padding: 40px 180px 60px;
+  color: #151515;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;   
+}
+
+
+/* left column */
+.footer-left {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-label {
+  font-size: 19px;
+  letter-spacing: 0.18em;
+  color: #999;
+}
+
+.footer-block a {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  color: #444;
+}
+
+.footer-block a:hover {
+  color: #000;
+}
+
+/* center “technologies” area */
+.footer-center {
+ 
+  padding-left: 120px;
+}
+
+.footer-center .footer-label {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.tech-logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.tech-symbol {
+  font-size: 30px;
+  color: #222;
+}
+
+.tech-text {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.tech-main {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+}
+
+.tech-sub {
+  font-size: 11px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.tech-divider {
+  font-size: 22px;
+  color: #c0c0c0;
+  margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .minimal-footer {
+    flex-direction: column;
+    padding: 30px 24px 40px;
+  }
+
+  .footer-center {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

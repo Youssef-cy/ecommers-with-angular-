@@ -1,0 +1,27 @@
+/* Side Menu */
+.side-menu {
+  margin-top: 60px;
+}
+
+.side-menu p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.search-box {
+  margin-top: 20px;
+  width: 250px;
+  background: #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
